@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietary Preference</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #3F7E3F;
+            margin: 0;
+            padding: 20px;
+        }
+        .progress-bar-container {
+            height: 5px;
+            background-color: #E0E0E0;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            width: 50%;
+            background-color: #3F7E3F;
+            border-radius: 3px;
+        }
+        .diet-box {
+            
+            border: 1px solid #3F7E3F;
+            background: #FFFFFF;
+            color: #3F7E3F;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 10px;
+            margin-left: 10px;
+            text-align: center;
+            width: 120px;
+        }
+
+        .diet-box:hover {
+            background: #3F7E3F;
+            color: #FFFFFF;
+        }
+        .diet-box div {
+            height: 0px;
+            border-radius: 10px;
+        }
+        .allergy-btn {
+            border: 1px solid #3F7E3F;
+            background: #FFFFFF;
+            color: #3F7E3F;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 12px;
+            width: 120px;
+            margin-top: 10px;
+            margin-left: 10px
+        }
+        .allergy-btn:hover {
+            background: #3F7E3F;
+            color: #FFFFFF;
+        }
+        .btn-next {
+            background: #3F7E3F;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 15px
+        }
+        
+        .btn-next:hover {
+            background: #2e602e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <!-- Progress Bar -->
+        <div class="progress-bar-container position-relative">
+            <div class="progress-bar-fill"></div>
+        </div>
+
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <button class="btn btn-link text-decoration-none text-success fs-4 p-0">&#8592;</button>
+            <span class="text-success fs-6">SKIP</span>
+        </div>
+        
+        <!-- Page header -->
+        <h2 class="text-center fs-5 mb-4">Tell us about your dietary preference.</h2>
+
+        <!-- Diet selection -->
+        <h3 style="font-size:18px;">Do you follow any of these diets?</h3>
+        <br>
+        <div class="row row-cols-3 gy-3 mb-5">
+            <div class="col diet-box">
+                <div></div>
+                <span>None</span>
+            </div>
+            <div class="col diet-box">
+                <div></div>
+                <span>Vegan</span>
+            </div>
+            <div class="col diet-box">
+                <div></div>
+                <span>Jain</span>
+            </div>
+            <div class="col diet-box">
+                <div></div>
+                <span>Vegetarian</span>
+            </div>
+            <div class="col diet-box">
+                <div></div>
+                <span>Pescetarian</span>
+            </div>
+            <div class="col diet-box">
+                <div></div>
+                <span>Low-carb</span>
+            </div>
+            <div class="col diet-box">
+                <div></div>
+                <span>Keto</span>
+            </div>
+            <div class="col diet-box">
+                <div></div>
+                <span>Other</span>
+            </div>
+        </div>
+
+        <!-- Allergies and intolerances -->
+        <h3 style="font-size: 18px;">Any ingredient allergies or intolerances?</h3>
+        <br>
+        <div class="row row-cols-3 gy-3 mb-5">
+            <button class="col allergy-btn">Dairy</button>
+            <button class="col allergy-btn">Gluten</button>
+            <button class="col allergy-btn">Egg</button>
+            <button class="col allergy-btn">Peanut</button>
+            <button class="col allergy-btn">Tree Nut</button>
+            <button class="col allergy-btn">Fish</button>
+        </div>
+
+        <!-- Next Button -->
+        <div class="text-center">
+            <a href="DietaryPref2.html" class="btn btn-next">NEXT</a>
+        </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
