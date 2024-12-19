@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Most Popular Recipes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #fff;
+      font-family: 'Inter', sans-serif;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #F5F5F5;
+      border-radius: 20px;
+      padding: 5px 15px;
+      margin-bottom: 20px;
+    }
+    .search-bar input {
+      border: none;
+      background: none;
+      outline: none;
+      flex: 1;
+      font-size: 14px;
+      color: #757575;
+    }
+    .search-bar i {
+      font-size: 18px;
+      color: #3F7E3F;
+      padding-right: 5px;
+    }
+    .card {
+      background-color: #F5F5F5;
+      border: none;
+      border-radius: 15px;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 5cm;
+      
+    }
+    <style>
+  .card {
+    border: none;
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    text-align: left;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+
+  .card:hover {
+    background-color: #3F7E3F; /* Green on hover */
+    color: white; /* Change text color to white for better contrast */
+  }
+
+  .card:hover .card-title,
+  .card:hover .card-text {
+    color: white; /* Ensure text stays visible */
+  }
+
+  .card img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-title {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: black;
+  }
+
+  .card-text {
+    font-size: 10px;
+    color: gray;
+  }
+
+  .bookmark-icon {
+    font-size: 16px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #3F7E3F;
+  }
+  .back-button {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  font-size: 16px;
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  
+  padding: 20px px;
+  
+  
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+</style>
+
+  
+    
+  </style>
+</head>
+<body>
+    
+  <div class="container mt-4">
+    <!-- Header -->
+    <h1 class="mb-4" style="font-weight: 600; font-size: 27px;padding-left: 90PX;">Most Popular</h1>
+    
+    <!-- Search Bar -->
+    <!-- Search Bar -->
+<form action="MOST POPULAR SEARCH .html" method="get" class="search-bar mb-4">
+    <i class="bi bi-search"></i>
+    <input type="text" placeholder="Search for recipes" name="query">
+  </form>
+  
+      
+    
+    <!-- Recipe Cards -->
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-6">
+        <div class="card position-relative">
+          <img src="https://i.pinimg.com/736x/bd/c0/3c/bdc03ca3e4ef6d3c1e2b089c0d26f9f4.jpg" alt="Apple Cinnamon Waffle">
+          <i class="bi bi-bookmark-fill bookmark-icon"></i>
+          <h5 class="card-title">Apple Cinnamon Waffle</h5>
+          <div class="stars mb-1">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+          </div>
+          <p class="card-text">10 Minutes | Medium</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-6">
+        <div class="card position-relative">
+          <img src="https://i.pinimg.com/736x/3d/13/8a/3d138a64861a839b94bcfeda8d2bacb7.jpg" alt="Grilled Sandwich">
+          <i class="bi bi-bookmark-fill bookmark-icon"></i>
+          <h5 class="card-title">Grilled Sandwich</h5>
+          <div class="stars mb-1">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </div>
+          <p class="card-text">30 Minutes | Medium</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-6">
+        <div class="card position-relative">
+          <img src="https://i.pinimg.com/736x/ee/82/2b/ee822bf3dd09fa0af8f1fd0ee58c5f26.jpg" alt="Pesto Pasta">
+          <i class="bi bi-bookmark-fill bookmark-icon"></i>
+          <h5 class="card-title">Pesto Pasta</h5>
+          <div class="stars mb-1">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </div>
+          <p class="card-text">40 Minutes | Medium</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-6">
+        <div class="card position-relative">
+          <img src="https://i.pinimg.com/736x/a0/50/42/a05042081d9fcdb9036c33fba7bedb82.jpg" alt="Idli">
+          <i class="bi bi-bookmark-fill bookmark-icon"></i>
+          <h5 class="card-title">Idli</h5>
+          <div class="stars mb-1">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </div>
+          <p class="card-text">30 Minutes | Medium</p>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-6">
+        <div class="card position-relative">
+          <img src="https://i.pinimg.com/736x/56/37/92/563792f3a4adf906ccf34a78da90a396.jpg" alt="Veg Kohlapuri">
+          <i class="bi bi-bookmark-fill bookmark-icon"></i>
+          <h5 class="card-title">Veg Kohlapuri</h5>
+          <div class="stars mb-1">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </div>
+          <p class="card-text">40 Minutes | Medium</p>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-6">
+        <div class="card position-relative">
+          <img src="https://i.pinimg.com/736x/7b/91/27/7b9127b5e959f57d16cd8c2b4e72cce9.jpg" alt="Veg Handi">
+          <i class="bi bi-bookmark-fill bookmark-icon"></i>
+          <h5 class="card-title">Veg Handi</h5>
+          <div class="stars mb-1">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </div>
+          <p class="card-text">40 Minutes | Medium</p>
+        </div>
+        <a href="MEAL PLANNING.html" class="back-button">&larr; </a>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

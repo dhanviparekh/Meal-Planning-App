@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Groceries</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f7fff7; margin: 0; padding: 0;">
+
+    <!-- Header -->
+    <div style="padding: 20px; background-color: #e0f2e0; text-align: left; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h1 style="margin: 0; color: #2b7a2b;">My Groceries</h1>
+        <p style="margin: 0; color: #5f9e5f;">10 Recipes • 16 Items</p>
+    </div>
+
+    <!-- Recipe Cards -->
+    <div style="display: flex; gap: 10px; padding: 10px; overflow-x: scroll;">
+        <div style="flex: 0 0 150px; background-color: #e8f5e8; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); position: relative; padding: 10px;">
+            <div style="position: absolute; top: 5px; left: 5px; background-color: #2b7a2b; color: white; font-size: 12px; padding: 3px 6px; border-radius: 5px;">4 People</div>
+            <div style="background-color: #cfeacf; height: 80px; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+                <span style="color: #2b7a2b;">Image</span>
+            </div>
+            <p style="margin: 10px 0 0; font-size: 14px; font-weight: bold; color: #2b7a2b;">Veg Kolhapuri</p>
+            <a href="#" style="text-decoration: none; font-size: 12px; color: #5f9e5f;">View Recipe ></a>
+        </div>
+        <div style="flex: 0 0 150px; background-color: #e8f5e8; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); position: relative; padding: 10px;">
+            <div style="position: absolute; top: 5px; left: 5px; background-color: #2b7a2b; color: white; font-size: 12px; padding: 3px 6px; border-radius: 5px;">2 People</div>
+            <div style="background-color: #cfeacf; height: 80px; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+                <span style="color: #2b7a2b;">Image</span>
+            </div>
+            <p style="margin: 10px 0 0; font-size: 14px; font-weight: bold; color: #2b7a2b;">Paneer Tikka</p>
+            <a href="#" style="text-decoration: none; font-size: 12px; color: #5f9e5f;">View Recipe ></a>
+        </div>
+    </div>
+
+    <!-- Add Items Section -->
+    <div style="padding: 20px; text-align: center;">
+        <button style="background-color: #2b7a2b; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 14px; cursor: pointer;">
+            + Add Your Own Items
+        </button>
+    </div>
+
+    <!-- Grocery List -->
+    <div style="padding: 10px;">
+        <h2 style="font-size: 16px; color: #2b7a2b; margin-bottom: 10px;">Beverages</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #e8f5e8; border-radius: 5px; margin-bottom: 10px;">
+            <span style="color: #2b7a2b;">Water (20 fl oz)</span>
+            <input type="checkbox">
+        </div>
+    </div>
+
+    <!-- Bottom Sheet -->
+    <div id="bottom-sheet" style="position: fixed; bottom: -200px; left: 0; width: 100%; background-color: #e0f2e0; border-top-left-radius: 15px; border-top-right-radius: 15px; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); padding: 20px; transition: bottom 0.3s;">
+        <p style="font-size: 16px; font-weight: bold; margin-bottom: 20px; color: #2b7a2b;">More Options</p>
+        <button style="background-color: #f7fff7; border: 1px solid #2b7a2b; border-radius: 5px; padding: 10px; width: 100%; margin-bottom: 10px; color: #2b7a2b; cursor: pointer;">Clear List</button>
+        <button style="background-color: #f7fff7; border: 1px solid #2b7a2b; border-radius: 5px; padding: 10px; width: 100%; color: #2b7a2b; cursor: pointer;">Share Ingredient List</button>
+    </div>
+
+    <!-- Toggle Button -->
+    <button onclick="toggleBottomSheet()" style="position: fixed; bottom: 20px; right: 20px; background-color: #2b7a2b; color: white; border: none; border-radius: 50%; padding: 10px 15px; font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); cursor: pointer;">☰</button>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleBottomSheet() {
+            const sheet = document.getElementById('bottom-sheet');
+            const isVisible = sheet.style.bottom === '0px';
+            sheet.style.bottom = isVisible ? '-200px' : '0px';
+        }
+    </script>
+</body>
+</html>
