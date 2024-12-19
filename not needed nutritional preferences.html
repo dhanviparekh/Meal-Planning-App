@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietary Preferences</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; /* Light green background */
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .back-arrow {
+            font-size: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        progress {
+            width: 60%;
+        }
+
+        .skip {
+            color: #666;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .goals-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .goal-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .goal-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .goal-card p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .calories-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .calories-options button {
+            flex: 1 1 calc(50% - 10px);
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .calories-options button:hover {
+            background-color: #a5d6a7; /* Light green */
+        }
+
+        .next-button {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: #4caf50; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="back-arrow">&#8592;</a>
+            <progress value="50" max="100"></progress>
+            <a href="#" class="skip">SKIP</a>
+        </header>
+
+        <main>
+            <h2>What goals do you hope to achieve?</h2>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <img src="placeholder.jpg" alt="Recipe Inspiration">
+                    <p>Recipe Inspiration</p>
+                </div>
+                <div class="goal-card">
+                    <img src="placeholder.jpg" alt="Plan Meal Better">
+                    <p>Plan Meal Better</p>
+                </div>
+                <div class="goal-card">
+                    <img src="placeholder.jpg" alt="Budget Friendly">
+                    <p>Budget Friendly</p>
+                </div>
+                <div class="goal-card">
+                    <img src="placeholder.jpg" alt="Organized Grocery Shopping">
+                    <p>Organized Grocery Shopping</p>
+                </div>
+                <div class="goal-card">
+                    <img src="placeholder.jpg" alt="Eat Healthy">
+                    <p>Eat Healthy</p>
+                </div>
+                <div class="goal-card">
+                    <img src="placeholder.jpg" alt="Learn To Cook">
+                    <p>Learn To Cook</p>
+                </div>
+            </div>
+
+            <h2>How many calories do you want to intake?</h2>
+            <div class="calories-options">
+                <button>Custom</button>
+                <button>1200-1500 cal/day</button>
+                <button>1500-1800 cal/day</button>
+                <button>1800-2100 cal/day</button>
+                <button>2100-2400 cal/day</button>
+                <button>2400-2700 cal/day</button>
+            </div>
+
+            <button class="next-button">NEXT</button>
+        </main>
+    </div>
+</body>
+</html>
